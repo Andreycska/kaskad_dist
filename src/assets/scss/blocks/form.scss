@@ -1,0 +1,162 @@
+.form {
+	// max-width: 550px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 3rem;
+}
+
+.form__input-text {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.form__group {
+		width: 49%;
+
+		// @include breakpoint($mobile) {
+		// 	width: 100%;
+		// }
+	}
+}
+
+.form__group {
+	margin-bottom: 2rem;
+}
+
+.form__point {
+	position: relative;
+}
+
+.form__input {
+	width: 100%;
+	padding: 2rem;
+
+	font-family: inherit;
+	font-size: 1.6rem;
+	color: $grey;
+
+	border: 1px solid $border-color;
+	border-radius: 5px;
+
+	&::placeholder {
+		font-family: inherit;
+		font-size: 1.6rem;
+		color: $grey;
+	}
+
+	&:focus {
+		outline: none;
+		border-color: $blue;
+	}
+}
+
+.form__input-label {
+	font-family: inherit;
+	font-size: 1.6rem;
+	color: $grey;
+
+	position: absolute;
+	top: 18px;
+    left: 20px;
+
+	pointer-events: none;
+    transform-origin: top left;
+    transition: all .3s ease;
+
+	&.focus {
+		transform: translateY(-14px) scale(.75);
+	}
+
+	// @include breakpoint($mobile) {
+	// 	font-size: 1.2rem;
+	// }
+}
+
+.form__text {
+	min-height: 120px;
+  	resize: none;
+}
+
+.form__description {
+	font-size: 1.2rem;
+	color: $black;
+}
+
+.form__checkbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	// @include breakpoint($mobile) {
+	// 	display: block;
+	// }
+}
+
+.checkbox__input {
+	display: none;
+
+	&:checked + .form__label::after {
+		transform: scale(1);
+	}
+}
+
+.form__label {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+
+	font-size: 1.6rem;
+
+	cursor: pointer;
+
+	position: relative;
+
+	&:before {
+		content: "";
+		flex: 0 0 2.4rem;
+		align-self: flex-start;
+		height: 2.4rem;
+		margin-right: 1rem;
+
+		background-color: $white;
+		border: 1px solid $border-color;
+		border-radius: 5px;
+
+	}
+
+	&:after {
+		content: "";
+		width: 2.8rem;
+		height: 2.8rem;
+
+		background: url('../images/check.svg') center no-repeat;
+		background-size: cover;
+		// background-color: lighten($blue, 15%);
+		border-radius: 5px;
+
+		position: absolute;
+		top: -2px;
+		left: -2px;
+
+		transform: scale(0);
+		transition: transform .5s ease;
+	}
+
+	a {
+		display: inline;
+		text-decoration: none;
+		color: $blue;
+	}
+
+	// @include breakpoint($tablet) {
+	// 	font-size: 1.4rem;
+	// }
+
+	// @include breakpoint($mobile) {
+	// 	margin-bottom: 2rem;
+	// }
+
+	// @include breakpoint($mobile-sm) {
+	// 	font-size: 1.2rem;
+	// }
+}

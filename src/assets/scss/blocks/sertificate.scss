@@ -1,0 +1,32 @@
+.sertificate {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sertificate__item {
+    flex: 0 0 20%;
+    margin-bottom: 2rem;
+
+    overflow: hidden;
+    transition: box-shadow .2s linear, transform .2s linear;
+
+    &:hover {
+        box-shadow: 6px 0px 30px rgba(84, 82, 79, .2);
+        transform: scale(1.1);
+    } 
+
+    & a img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @include breakpoint($ipadair) {
+        flex: 0 0 33%;
+    }
+
+    @include breakpoint($mobile-m) {
+        flex: 0 0 50%;
+    }
+}

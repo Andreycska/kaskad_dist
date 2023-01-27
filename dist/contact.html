@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- Useful yandex API-->
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3ed0209e-d995-41d4-9018-dec508dc1de8&lang=ru_RU" type="text/javascript"></script>
+    
+    <title>Многопрофильная компания КАСКАД | Контакты</title>
+</head>
+<body>
+    
+    <div class="page" id="page">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+        
+                    <a class="header__logo" href="#">
+                        <img class="img" src="assets/images/logo_mini.png" alt="Многопрофильная компания КАСКАД">
+                        <div class="header__text">
+                            <p class="header__text--suptitle">Многопрофильная компания</p>
+                            <p class="header__text--subtitle">КАСКАД</p>
+                        </div>
+                    </a><!--/.header__logo-->
+        
+                    <nav class="nav" id="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link has-subnav" href="about.html">О компании</a>
+                                <ul class="nav__list nav__list--subnav">
+                                    <li>
+                                        <a class="nav__link nav__link--subnav" href="about.html#capacity">Производственные мощности</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__link nav__link--subnav" href="about.html#sertificate">Документы</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__link nav__link--subnav" href="about.html#gallary">Галерея</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__link nav__link--subnav" href="about.html#partners">Партнеры</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link has-subnav" href="services.html">Услуги</a>
+                                <ul class="nav__list nav__list--subnav">
+                                    <li>
+                                        <a class="nav__link nav__link--subnav" href="services.html#diving">Подводно-технические, водолазные работы</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__link nav__link--subnav" href="services.html#repair">Судоремонт</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__link nav__link--subnav" href="services.html#ship">Плавсредства</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav__item">
+                                <a class="nav__link" href="project.html">Проекты</a>
+                            </li> -->
+                            <li class="nav__item">
+                                <a class="nav__link" href="contact.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <button class="burger" type="button" id="sidebarToggle">
+                        <span></span>
+                    </button>
+        
+                </div><!--/.header__inner-->
+            </div><!--/.container-->
+        </header><!--/.header-->
+        
+        <main class="main">
+            
+            <div class="intro">
+                <div class="intro__page">
+                    <img class="intro__img" src="assets/images/intro/intro-contatc.jpg" alt="Контакты">
+                </div>
+            </div>
+            
+            <section class="section">
+                <div class="container">
+                    <!-- <h2 class="section__title section__title--no-border">Наши контакты</h2> -->
+            
+                    <div class="contacts">
+                        <h3 class="contacts__title">Наши контакты</h3>
+                        <div class="contacts__inner">
+                            <div class="contacts__item">
+                                <h4 class="contacts__prof">Генеральный директор</h4>
+                                <div class="contacts__name"><img src="assets/images/contact/avatar.svg" alt="avatar"> Шуреков Владимир Петрович</div>
+                                <a class="contacts__phone" href="tel:88512406656"><img src="assets/images/contact/smartphone.svg" alt="mail">
+                                    8 (8512) 40-66-56</a>
+                            </div>
+                            <div class="contacts__item">
+                                <h4 class="contacts__prof">Финансовый директор</h4>
+                                <div class="contacts__name contacts__name--woman"><img src="assets/images/contact/avatar.svg" alt="avatar">Малеева Нина Константиновна</div>
+                                <a class="contacts__phone" href="tel:88512406656"><img src="assets/images/contact/smartphone.svg" alt="mail"> 8 (8512) 40-66-85</a>
+                            </div>
+                            <div class="contacts__item">
+                                <h4 class="contacts__prof">Приемная</h4>
+                                <a class="contacts__phone" href="tel:88512406656"><img src="assets/images/contact/smartphone.svg" alt="mail"> 8 (8512) 40-66-85</a>
+                                <a class="contacts__mail" href="mailto:88512406656"><img src="assets/images/contact/message.svg" alt="mail"> ooo_mk_kaskad@mail.ru</a>
+                            </div>
+                        </div><!--/.contacts__inner-->
+            
+                        <h3 class="contacts__title">Наш адрес</h3>
+                        <div class="contact__address">416463, Астраханская область, Приволжский район, село Карагали, ул. Заводская, д.2.</div>
+            
+                        <div id="map1"></div>
+            
+                    </div><!--/.contacts-->
+            
+                    <!--<h2 class="section__title section__title--no-border">Написать нам</h2>
+            
+                    <form class="form" enctype="multipart/form-data" method="post">
+            
+                        <div class="form__input-text">
+                            <div class="form__group">
+                                <div class="form__point">
+                                    <input class="form__input" type="text" name="name" id="name">
+                                    <label class="form__input-label" for="name">ФИО<sub>*<sub></label>
+                                </div>
+                            </div>
+                
+                            <div class="form__group">
+                                <div class="form__point">
+                                    <input class="form__input" type="tel" name="tel"id="tel" maxlength="18" data-tel-input>
+                                    <label class="form__input-label"for="tel">Телефон<sub>*</sub></label>
+                                </div>
+                            </div>
+                
+                            <div class="form__group">
+                                <div class="form__point">
+                                    <input class="form__input" type="mail" name="mail"id="mail">
+                                    <label class="form__input-label" for="mail">E-mail<label>
+                                </div>
+                            </div>
+                
+                            <div class="form__group">
+                                <div class="form__point">
+                                    <input class="form__input" type="text" name="tema"id="tech">
+                                    <label class="form__input-label" for="tema">Темаобращения</label>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="form__group">
+                            <div class="form__point">
+                                <textarea class="form__input form__text" name="text"id="text" data-autoresize></textarea>
+                                <label class="form__input-label" for="text">Ваше сообщение<label>
+                            </div>
+                        </div>
+            
+                        <div class="form__group">
+                            <div class="form__checkbox">
+                                <input class="checkbox__input" id="formAgreement"type="checkbox" name="agreement" checked>
+                                <label for="formAgreement" class="form__label">Нажимаякнопку «Отправить», я даю согласие на обработку моихперсональных данных
+                                </label>
+                                <button class="btn btn--blue btn--width"type="submit">Отправить</button>
+                            </div>
+                        </div>
+            
+                    </form>-->
+                    
+                </div>
+            
+                
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <div class="footer__title">Многопрофильная компания КАСКАД</div>
+                        <div class="footer__content">
+                            <div class="footer__text">
+                                <p>ООО МК «Каскад» — частное предприятие, созданное с целью предоставления полного перечня услуг при выполнении водолазных, гидрографических и геодезических работ, а также выполняет работы по судостроению и судоремонту.</p>
+                            </div>
+                        </div>
+                        <!--<a class="footer__link" href="#">Политика конфиденциальности</a>-->
+                    </div>
+        
+                    <div class="footer__item">
+                        <div class="footer__title">НАША ДЕЯТЕЛЬНОСТЬ</div>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="services.html#diving">Подводно-технические, водолазные работы</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="services.html#repair">Судоремонт</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="services.html#ship">Плавсредства</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="about.html#power">Производственные мощности</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <div class="footer__item">
+                        <div class="footer__title">СВЯЖИТЕСЬ С НАМИ</div>
+                        <nav class="footer__content">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    E-mail:
+                                    <a class="footer__link" href="mailto:ooo_mk_kaskad@mail.ru">ooo_mk_kaskad@mail.ru</a>
+                                </li>
+                                <li class="footer__item">
+                                    Тел.:
+                                    <a class="footer__link" href="tel:88512406656">8 (8512) 40-66-56</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="https://yandex.ru/maps/-/CCU4e2rSCC" target="_blank">416463, Астраханская область, Приволжский район, село Карагали, ул. Заводская, д.2.
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    </div>
+        
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

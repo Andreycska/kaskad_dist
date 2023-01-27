@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    @include breakpoint($tablet) {
+        position: relative;
+    }
+}
+
+.header__inner {
+    display: flex;
+    height: 10rem;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint($tablet) {
+        height: 8rem;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: $grey;
+}
+
+.header__text {
+    padding-left: 1rem;
+
+    text-transform: uppercase;
+
+    &--suptitle {
+        font-size: 1.2rem;
+
+        @include breakpoint($mobile-sx) {
+            font-size: 1rem;
+        }
+    }
+
+    &--subtitle {
+        font-size: 3.7rem;
+        font-weight: 700;
+        line-height: .9;
+        letter-spacing: 1rem;
+        text-align: center;
+
+        @include breakpoint($mobile-sx) {
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.contact-us {
+    padding: 2rem 3rem;
+
+    border: 1px solid $border-color;
+    background-color: #fcfcfc;
+
+    @include breakpoint($mobile-m) {
+        box-shadow: 0px 6px 8px rgba($black, .2);
+        margin-bottom: 0.5rem;
+    }
+}
+
+.contact-us__title {
+    margin-bottom: 1rem;
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    @include breakpoint($mobile-m) {
+        font-size: 2rem;
+    }
+}
+
+.contact-us__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($mobile-m) {
+        flex-wrap: wrap;
+    }
+}
+
+.contact-us__text {
+    flex: 0 0 60%;
+
+    @include breakpoint($ipadair) {
+        padding-right: 2rem;
+    }
+
+    @include breakpoint($mobile-m) {
+        flex: 0 0 100%;
+        padding-right: 0rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.contact-us__button {
+    width: 100%;
+
+    @include breakpoint($mobile-m) {
+        text-align: center;
+    }
+}

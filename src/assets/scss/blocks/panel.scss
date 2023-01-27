@@ -1,0 +1,79 @@
+.panel__header {
+    padding: 1.5rem 1.5rem 1.5rem 6.5rem;;
+    margin-bottom: .5rem;
+    position: relative;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $grey;
+    text-transform: uppercase;
+
+    background-color: #f5f5f5;
+    border: 1px solid $border-color;
+    border-radius: .4rem;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+    
+        border-top: 1px solid $light-grey;
+        border-right: 1px solid $light-grey;
+    
+        position: absolute;
+        top: 40%;
+        right: 15px;
+        z-index: 1;
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    &.panel-active {
+        border-bottom: 1px solid $border-color;
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.panel__img {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.panel-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $grey;
+    text-transform: uppercase;
+}
+  
+.panel-body {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    display: none;
+    margin-bottom: 1rem;
+    background: #fff;
+}
+  
+.panel-active {
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+  
+.panel-active + .panel-body {
+    display: block;
+}

@@ -1,0 +1,47 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: .9em 1.5em;
+
+    font-family: inherit;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-weight: 400;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background: $black;
+    border: none;
+    cursor: pointer;
+
+    transition: all .2s linear;
+
+    &--blue {
+        background-color: $blue;
+        box-shadow: 0 7px 17px 5px rgba($blue, .3);
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+            background-color: darken($blue, 5%);
+        }
+    }
+
+    &--small {
+        font-size: 1.4rem;
+    }
+
+    &--benefits {
+        min-width: 15rem;
+    }
+
+    &--width {
+        width: 100%;
+        text-align: center;
+
+        @include breakpoint($mobile-m) {
+            width: auto;
+        }
+    }
+}

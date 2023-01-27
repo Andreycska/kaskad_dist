@@ -1,0 +1,58 @@
+@import "vars";
+@import "vendor/mixins";
+@import "vendor/reset";
+@import "vendor/swiper-bundles";
+@import "vendor/animate";
+@import "vendor/glightbox";
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $white;
+
+    font-family: system-ui, -apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $grey;
+
+    &.show-sidebar {
+        overflow: hidden;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+@import "blocks/page";
+@import "blocks/container";
+@import "helper/img";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/sidebar";
+@import "blocks/intro";
+@import "blocks/swiper";
+@import "blocks/btn";
+@import "blocks/section";
+@import "blocks/about";
+@import "blocks/works";
+@import "blocks/benefits";
+@import "blocks/map";
+@import "blocks/contact-us";
+@import "blocks/company";
+@import "blocks/sertificate";
+@import "blocks/gallary";
+@import "blocks/panel";
+@import "blocks/acordion";
+@import "blocks/services";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/footer";

@@ -1,0 +1,138 @@
+.benefits {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($mobile) {
+        flex-wrap: wrap;
+    }
+}
+
+.benefits__item {
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 32%;
+    padding: 2rem;
+    min-width: 30px;
+
+    background-color: $white;
+    border: 1px solid $border-color;
+    box-shadow: 0px 6px 8px rgba($black, .2);
+
+    @include breakpoint($ipadair) {
+        padding: 1.2rem;
+    }
+
+    @include breakpoint($mobile) {
+        flex: 0 0 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.benefits__title {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: $blue;
+    text-transform: uppercase;
+    text-align: center;
+
+    border-bottom: 1px solid $border-color;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1rem;
+    }
+}
+
+.benefits__text {
+    margin-bottom: 4rem;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1rem;
+    }
+}
+
+.benefits__subtitle {
+    margin-bottom: 2rem;
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: $black;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1rem;
+    }
+}
+
+.benefits__list {
+    padding-left: 8rem;
+    padding-right: 2rem;
+
+    counter-reset: list;
+
+    & .benefits__order:before {
+        content: counter(list)'.';
+        counter-increment: list;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.8;
+        margin-left: -1.3rem;
+        margin-right: .3rem;
+        color: $blue;
+    }
+
+    @include breakpoint($ipadair) {
+        padding-left: 2rem;
+    }
+
+    @include breakpoint($mobile) {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+.benefits__order {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.5rem;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.benefits__sertificate {
+    display: flex;
+    margin-bottom: 5rem;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 2rem;
+    }
+}
+
+.benefits__img {
+    display: block;
+    width: 5.4rem;
+    height: 8rem;
+    margin-right: 3rem;
+
+    @include breakpoint($ipadair) {
+        margin-right: 1rem;
+    }
+}
+
+.benefits__description {
+    font-size: 1.5rem;
+}
+
+.benefits__control {
+    margin-top: auto;
+
+    text-align: center;
+}
